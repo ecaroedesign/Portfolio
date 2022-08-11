@@ -1,0 +1,297 @@
+* {box-sizing: border-box}
+
+/* mint: #E8FFF5
+lightgrey: #CCCCCC
+gray: #AAAAAA
+darkgrey: #3F3F3F
+dark: #151515 */
+
+body {
+  margin: 0;
+  padding: 0 ;
+}
+
+/* NAV SECTION  */
+.nav-sect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5em;
+  padding-right: 5em;
+  margin-top: -1.5em;
+}
+
+.nav-name {
+  font-family: 'Playfair Display', serif;
+  color: #151515;
+}
+
+.nav-link {
+  font-family: 'Heebo', sans-serif;
+  padding: 2em;
+  text-decoration: none;
+  color: #3F3F3F;
+}
+
+.nav-link:hover {
+  color: #CCCCCC;
+}
+
+.line {
+  width: 90%;
+  border-color: #ffffff;
+}
+/* END OF NAV SECTION */
+
+/* HOME PAGE */
+main {
+  text-align: center;
+}
+
+#full-name {
+  font-family: 'Playfair Display', serif;
+  color: #151515;
+}
+
+#full-title {
+  font-family: 'Heebo', sans-serif;
+  color: #3F3F3F;
+}
+
+.skills-container {
+  text-align: right;
+}
+
+.big-sect {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 4em;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-bottom: 5em;
+}
+
+.fa-brands {
+  width: 2em;
+  font-size: 2.5em;
+  color: #AAAAAA;
+}
+/* END OF HOMEPAGE */
+
+/* TEXT ON ALL PAGES */
+.headline {
+  font-family: 'Playfair Display', serif;
+  color: #151515;
+}
+
+.about-p {
+  width: 45%;
+  font-family: 'Heebo', sans-serif;
+  color: #3F3F3F;
+}
+
+.heading {
+  padding: 10px;
+  font-size: 18pt;
+}
+
+.proj-name {
+  font-family: 'Playfair Display', serif;
+  color: #151515;
+  font-size: 17pt;
+}
+
+.my-link {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  text-decoration: none;
+  color: #3F3F3F;
+}
+
+.my-link:hover {
+  color: #CCCCCC;
+}
+
+.my-link:visited {
+  color: #AAAAAA;
+}
+
+.img {
+  transition: transform .2s;
+}
+
+.img:hover {
+  transform: scale(1.3);
+}
+/* END OF TEXT ON ALL PAGES */
+
+
+
+/* PORTFOLIO PAGE */
+.proj-sect {
+  padding: 10px;
+}
+
+.proj-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5em;
+}
+
+.proj-box {
+  width: 20em;
+  height: 20em;
+  background-color: #E8FFF5;
+  text-align: center;
+  transition: transform .2s;
+}
+
+.proj-box:hover {
+  transform: scale(1.3);
+}
+
+.box-link {
+  border: none;
+  background: none;
+}
+
+.proj-t {
+  font-family: 'Playfair Display', serif;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  font-size: 19pt;
+}
+
+.proj-p {
+  font-family: 'Heebo', sans-serif;
+  font-size: 10pt;
+}
+
+.proj-link {
+  text-decoration: none;
+  color: #3F3F3F
+}
+/* END OF PORTFOLIO PAGE */
+
+/* FAKE CLIENTS PAGE */
+.at-container {
+  padding: 15px;
+}
+/* END OF FAKE CLIENTS PAGE */
+
+/* WEBSITE PAGE */
+.web-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* END OF WEBSITE PAGE */
+
+/* MISCELLANEOUS PAGE */
+.misc-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* END OF MISCELLANEOUS PAGE */
+
+/* MINT BOTTOM */
+.bottom-sect {
+  background-color: #E8FFF5;
+}
+
+.ct {
+  text-align: center;
+}
+
+.contact-p {
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+  color: #3F3F3F;
+}
+
+footer {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #AAAAAA;
+}
+/* END OF MINT BOTTOM */
+
+
+/* RESPONSIVE */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .nav-sect {
+    padding: 0;
+  }
+  .big-sect {
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 1.9em;
+    margin: 1em;
+  }
+  .intro-t {
+    font-size: 1em;
+  }
+  .intro-p {
+    font-size: 0.8em;
+  }
+  .proj-sect {
+    text-align: center;
+  }
+  .proj-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .proj-sum {
+    width: 100%;
+  }
+  .web-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .web-p {
+    width: 100%;
+  }
+  .ufc{
+    width: 250px;
+    height: 200px;
+  }
+  .hmf{
+    width: 250px;
+    height: 200px;
+  }
+  .at-container {
+    text-align: center;
+  }
+  .fc-sum {
+    width: 100%;
+  }
+  .arctic-travel {
+    width: 410px;
+    height: 400px;
+    text-align: center;
+  }
+  .misc-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .misc-sum {
+    width: 100%;
+  }
+  .other {
+    width: 200px;
+    height:250px;
+  }
+  .other-t {
+    text-align: center;
+  }
+}
