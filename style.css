@@ -199,10 +199,25 @@ main {
 /* END OF WEBSITE PAGE */
 
 /* MISCELLANEOUS PAGE */
-.misc-container {
+.calc-container,
+.pbc-container,
+.todo-container,
+.ttt-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+
+.misc-sum {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.other {
+  margin: -10px;
 }
 /* END OF MISCELLANEOUS PAGE */
 
